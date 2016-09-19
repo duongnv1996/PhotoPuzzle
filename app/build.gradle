@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.oldenweb.PhotoPuzzle"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 6
+        versionName "1.5"
+    }
+
+    dexOptions {
+        //javaMaxHeapSize "2048M"
+        preDexLibraries = false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile files('libs/applovin-sdk-6.3.2.jar')
+}

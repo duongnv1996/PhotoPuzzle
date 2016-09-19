@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Javadoc API documentation for AppLovin Android SDK 6.3.2." />
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<title>
+
+  AppLovinEventService
+
+
+| AppLovin Android SDK 6.3.2
+
+</title>
+<link href="../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../", "../../../../assets/");
+</script>
+<script src="../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../assets/navtree_data.js" type="text/javascript"></script>
+<script src="../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="">
+
+<div id="header">
+    <div id="headerLeft">
+    
+      <span id="masthead-title">AppLovin Android SDK 6.3.2</span>
+    
+    </div>
+    <div id="headerRight">
+      
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../')"
+                      onkeyup="return search_changed(event, false, '../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+      
+    </div>
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../packages.html"  >Package Index</a> | 
+                <a href="../../../classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../com/applovin/adview/package-summary.html">com.applovin.adview</a></li>
+    <li class="api apilevel-">
+  <a href="../../../com/applovin/nativeAds/package-summary.html">com.applovin.nativeAds</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../com/applovin/sdk/package-summary.html">com.applovin.sdk</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAd.html">AppLovinAd</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdClickListener.html">AppLovinAdClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdDisplayListener.html">AppLovinAdDisplayListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdLoadListener.html">AppLovinAdLoadListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdRewardListener.html">AppLovinAdRewardListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdService.html">AppLovinAdService</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdUpdateListener.html">AppLovinAdUpdateListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdVideoPlaybackListener.html">AppLovinAdVideoPlaybackListener</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/applovin/sdk/AppLovinEventService.html">AppLovinEventService</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinPostbackListener.html">AppLovinPostbackListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinPostbackService.html">AppLovinPostbackService</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinTargetingData.html">AppLovinTargetingData</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdSize.html">AppLovinAdSize</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdType.html">AppLovinAdType</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinErrorCodes.html">AppLovinErrorCodes</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html">AppLovinEventParameters</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinEventTypes.html">AppLovinEventTypes</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinSdk.html">AppLovinSdk</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinSdkSettings.html">AppLovinSdkSettings</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinSdkUtils.html">AppLovinSdkUtils</a></li>
+      </ul>
+    </li>
+              
+              
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../packages.html"  >Package Index</a> | 
+            <a href="../../../classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+
+<div class="sum-details-links">
+
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+     
+    
+    interface
+<h1>AppLovinEventService</h1>
+
+
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.applovin.sdk.AppLovinEventService</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p>Created by mszaro on 7/17/15.
+</p>
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackCheckout(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackCheckout</a></span>(String transactionIdentifier, Map&lt;String,&nbsp;String&gt; parameters)</nobr>
+        
+        <div class="jd-descrdiv">Track a checkout / standard purchase.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent</a></span>(String eventType, Map&lt;String,&nbsp;String&gt; parameters)</nobr>
+        
+        <div class="jd-descrdiv">Track an event of a given type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String)">trackEvent</a></span>(String eventType)</nobr>
+        
+        <div class="jd-descrdiv">Track an event of a given type.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackInAppPurchase(android.content.Intent, java.util.Map<java.lang.String, java.lang.String>)">trackInAppPurchase</a></span>(Intent purchaseIntent, Map&lt;String,&nbsp;String&gt; parameters)</nobr>
+        
+        <div class="jd-descrdiv">Track an in app purchase.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="trackCheckout(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">trackCheckout</span>
+      <span class="normal">(String transactionIdentifier, Map&lt;String,&nbsp;String&gt; parameters)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Track a checkout / standard purchase.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>transactionIdentifier</td>
+          <td>An optional unique identifier for this transaction, as generated by you.</td>
+        </tr>
+        <tr>
+          <th>parameters</td>
+          <td>A map containing key-value pairs further describing this event. You should provide, at a minimum, <code><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#REVENUE_AMOUNT">REVENUE_AMOUNT</a></code> and <code><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#REVENUE_CURRENCY">REVENUE_CURRENCY</a></code>. We also recommend passing <code><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#PRODUCT_IDENTIFIER">PRODUCT_IDENTIFIER</a></code>.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">trackEvent</span>
+      <span class="normal">(String eventType, Map&lt;String,&nbsp;String&gt; parameters)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Track an event of a given type.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>eventType</td>
+          <td>A string describing this event; can one of the predefined constants defined in <code><a href="../../../com/applovin/sdk/AppLovinEventTypes.html">AppLovinEventTypes</a></code>, or a custom string.</td>
+        </tr>
+        <tr>
+          <th>parameters</td>
+          <td>A dictionary containing key-value pairs further describing this event. Particular data points of interest are provided as "suggested keys" in the doc comment for each event type constant in <code><a href="../../../com/applovin/sdk/AppLovinEventTypes.html">AppLovinEventTypes</a></code>.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="trackEvent(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">trackEvent</span>
+      <span class="normal">(String eventType)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Track an event of a given type.
+
+ For many event types, it is preferable to provide additional data by using <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> instead.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>eventType</td>
+          <td>A string describing this event; can one of the predefined constants defined in <code><a href="../../../com/applovin/sdk/AppLovinEventTypes.html">AppLovinEventTypes</a></code>, or a custom string.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="trackInAppPurchase(android.content.Intent, java.util.Map<java.lang.String, java.lang.String>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">trackInAppPurchase</span>
+      <span class="normal">(Intent purchaseIntent, Map&lt;String,&nbsp;String&gt; parameters)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Track an in app purchase.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>purchaseIntent</td>
+          <td>Intent returned to you by Google Play.</td>
+        </tr>
+        <tr>
+          <th>parameters</td>
+          <td>A map containing key-value pairs further describing this event. You should provide, at a minimum, <code><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#REVENUE_AMOUNT">REVENUE_AMOUNT</a></code> and <code><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#REVENUE_CURRENCY">REVENUE_CURRENCY</a></code>. We also recommend passing <code><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#PRODUCT_IDENTIFIER">PRODUCT_IDENTIFIER</a></code>.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize doclava-developer-docs.js */
+</script>
+
+</body>
+</html>

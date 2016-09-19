@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/admob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false" >
+
+        <FrameLayout
+            android:id="@+id/game"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:visibility="gone" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="@string/select"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:id="@+id/photos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="6" />
+
+            <LinearLayout
+                android:id="@+id/menu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_sound"
+                    style="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="@string/btn_mute" />
+
+                <Button
+                    android:id="@+id/btn_mode"
+                    style="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="@string/btn_hard" />
+
+                <Button
+                    android:id="@+id/btn_start"
+                    style="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_start"
+                    android:onClick="onClick"
+                    android:text="@string/btn_start" />
+
+                <Button
+                    android:id="@+id/btn_exit"
+                    style="@style/Button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="@string/btn_exit" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txt_result"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="bottom|center"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="@string/time"
+                android:textColor="#E5FD8C"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_high_result"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="top|center"
+                android:shadowColor="#000"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="@string/best_time"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_home"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:text="@string/btn_home" />
+
+            <Button
+                android:id="@+id/btn_start2"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_start"
+                android:onClick="onClick"
+                android:text="@string/btn_start2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mess"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:padding="20dp"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="@string/faq"
+            android:textColor="#FFF"
+            android:textSize="30sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

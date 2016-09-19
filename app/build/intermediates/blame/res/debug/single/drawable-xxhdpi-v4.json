@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\Download\\codecanyon-10538753-photo-puzzle-game-with-admob\\PhotoPuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "E:\\Download\\codecanyon-10538753-photo-puzzle-game-with-admob\\PhotoPuzzle\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Download\\codecanyon-10538753-photo-puzzle-game-with-admob\\PhotoPuzzle\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_full_open_on_phone.png",
+        "source": "E:\\Download\\codecanyon-10538753-photo-puzzle-game-with-admob\\PhotoPuzzle\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\drawable-xxhdpi\\common_full_open_on_phone.png"
+    }
+]

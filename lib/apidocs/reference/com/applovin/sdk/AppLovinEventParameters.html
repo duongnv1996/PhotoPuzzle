@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Javadoc API documentation for AppLovin Android SDK 6.3.2." />
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<title>
+
+  AppLovinEventParameters
+
+
+| AppLovin Android SDK 6.3.2
+
+</title>
+<link href="../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../", "../../../../assets/");
+</script>
+<script src="../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../assets/navtree_data.js" type="text/javascript"></script>
+<script src="../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="">
+
+<div id="header">
+    <div id="headerLeft">
+    
+      <span id="masthead-title">AppLovin Android SDK 6.3.2</span>
+    
+    </div>
+    <div id="headerRight">
+      
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../')"
+                      onkeyup="return search_changed(event, false, '../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+      
+    </div>
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../packages.html"  >Package Index</a> | 
+                <a href="../../../classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="../../../com/applovin/adview/package-summary.html">com.applovin.adview</a></li>
+    <li class="api apilevel-">
+  <a href="../../../com/applovin/nativeAds/package-summary.html">com.applovin.nativeAds</a></li>
+    <li class="selected api apilevel-">
+  <a href="../../../com/applovin/sdk/package-summary.html">com.applovin.sdk</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAd.html">AppLovinAd</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdClickListener.html">AppLovinAdClickListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdDisplayListener.html">AppLovinAdDisplayListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdLoadListener.html">AppLovinAdLoadListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdRewardListener.html">AppLovinAdRewardListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdService.html">AppLovinAdService</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdUpdateListener.html">AppLovinAdUpdateListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdVideoPlaybackListener.html">AppLovinAdVideoPlaybackListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinEventService.html">AppLovinEventService</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinPostbackListener.html">AppLovinPostbackListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinPostbackService.html">AppLovinPostbackService</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinTargetingData.html">AppLovinTargetingData</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdSize.html">AppLovinAdSize</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinAdType.html">AppLovinAdType</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinErrorCodes.html">AppLovinErrorCodes</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html">AppLovinEventParameters</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinEventTypes.html">AppLovinEventTypes</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinSdk.html">AppLovinSdk</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinSdkSettings.html">AppLovinSdkSettings</a></li>
+          <li class="api apilevel-"><a href="../../../com/applovin/sdk/AppLovinSdkUtils.html">AppLovinSdkUtils</a></li>
+      </ul>
+    </li>
+              
+              
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../packages.html"  >Package Index</a> | 
+            <a href="../../../classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+
+Summary:
+
+
+
+
+
+  <a href="#constants">Constants</a>
+  
+
+
+
+
+
+  &#124; <a href="#pubctors">Ctors</a>
+  
+
+
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+     
+    
+    class
+<h1>AppLovinEventParameters</h1>
+
+
+
+  
+    extends Object<br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.applovin.sdk.AppLovinEventParameters</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p>Class containing constants for use with <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code>.
+</p>
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
+
+
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#CHECKOUT_TRANSACTION_IDENTIFIER">CHECKOUT_TRANSACTION_IDENTIFIER</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents a unique ID for the given checkout.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#COMPLETED_ACHIEVEMENT_IDENTIFIER">COMPLETED_ACHIEVEMENT_IDENTIFIER</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents an identifier of the achievement the user has just completed/unlocked.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#COMPLETED_LEVEL_IDENTIFIER">COMPLETED_LEVEL_IDENTIFIER</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents an identifier of the level the user has just completed.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#CONTENT_IDENTIFIER">CONTENT_IDENTIFIER</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which identifies a particular piece of content viewed by the user.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#IN_APP_DATA_SIGNATURE">IN_APP_DATA_SIGNATURE</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which identifiers Google Play In-app Billing purchase data.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#IN_APP_PURCHASE_DATA">IN_APP_PURCHASE_DATA</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which identifiers Google Play In-app Billing purchase data.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#IN_APP_PURCHASE_TRANSACTION_IDENTIFIER">IN_APP_PURCHASE_TRANSACTION_IDENTIFIER</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which identifies a Google Play In-app Billing transaction ID.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#PRODUCT_IDENTIFIER">PRODUCT_IDENTIFIER</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which identifies a particular product.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#RESERVATION_END_TIMESTAMP">RESERVATION_END_TIMESTAMP</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the end date of a reservation.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#RESERVATION_START_TIMESTAMP">RESERVATION_START_TIMESTAMP</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the start date of a reservation.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#REVENUE_AMOUNT">REVENUE_AMOUNT</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the amount of revenue generated by a purchase event.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#REVENUE_CURRENCY">REVENUE_CURRENCY</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the currency of the revenue event.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#SEARCH_QUERY">SEARCH_QUERY</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents a search query executed by the user.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#USER_ACCOUNT_IDENTIFIER">USER_ACCOUNT_IDENTIFIER</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the username or account ID of the user.</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#VIRTUAL_CURRENCY_AMOUNT">VIRTUAL_CURRENCY_AMOUNT</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the amount of virtual currency that a user spent on an in-game purchase.</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#VIRTUAL_CURRENCY_NAME">VIRTUAL_CURRENCY_NAME</a></td>
+        <td class="jd-descrcol" width="100%">Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the name of the virtual currency that a user spent on an in-game purchase.</td>
+    </tr>
+    
+    
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../com/applovin/sdk/AppLovinEventParameters.html#AppLovinEventParameters()">AppLovinEventParameters</a></span>()</nobr>
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  java.lang.Object
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Object</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(Object arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            Class&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- ========= ENUM CONSTANTS DETAIL ======== -->
+<h2>Constants</h2>
+
+
+
+
+<A NAME="CHECKOUT_TRANSACTION_IDENTIFIER"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        CHECKOUT_TRANSACTION_IDENTIFIER
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents a unique ID for the given checkout. All keys and values in the parameter map should be of type String.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "transaction_id"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="COMPLETED_ACHIEVEMENT_IDENTIFIER"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        COMPLETED_ACHIEVEMENT_IDENTIFIER
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents an identifier of the achievement the user has just completed/unlocked. All keys and values in the parameter map should be of type String.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "achievement_id"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="COMPLETED_LEVEL_IDENTIFIER"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        COMPLETED_LEVEL_IDENTIFIER
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents an identifier of the level the user has just completed. All keys and values in the parameter map should be of type String.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "level_id"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="CONTENT_IDENTIFIER"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        CONTENT_IDENTIFIER
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which identifies a particular piece of content viewed by the user. All keys and values in the parameter map should be of type String.
+
+ This could be something like a section title, or even a name of an activity. For views of particular products, it is preferred you pass an SKU under PRODUCT_IDENTIFIER.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "content_id"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="IN_APP_DATA_SIGNATURE"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        IN_APP_DATA_SIGNATURE
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which identifiers Google Play In-app Billing purchase data. This should be the value for key INAPP_DATA_SIGNATURE in your IAP buy intent. All keys and values in the parameter map should be of type String.
+
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "receipt_data_signature"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="IN_APP_PURCHASE_DATA"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        IN_APP_PURCHASE_DATA
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which identifiers Google Play In-app Billing purchase data. This should be the value for key INAPP_PURCHASE_DATA in your IAP buy intent. All keys and values in the parameter map should be of type String.
+
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "receipt_data"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="IN_APP_PURCHASE_TRANSACTION_IDENTIFIER"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        IN_APP_PURCHASE_TRANSACTION_IDENTIFIER
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which identifies a Google Play In-app Billing transaction ID. All keys and values in the parameter map should be of type String.
+
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "store_id"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="PRODUCT_IDENTIFIER"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        PRODUCT_IDENTIFIER
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which identifies a particular product. All keys and values in the parameter map should be of type String.
+
+ This could be something like a product name, SKU or inventory ID. For non-product content, like tracking uses of particular activities, it is preferred you pass CONTENT_IDENTIFIER instead.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "sku"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="RESERVATION_END_TIMESTAMP"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        RESERVATION_END_TIMESTAMP
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the end date of a reservation. All keys and values in the parameter map should be of type String.
+
+ If a reservation does not span multiple days, you can submit only RESERVATION_START_TIMESTAMP and ignore this parameter.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "end_date"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="RESERVATION_START_TIMESTAMP"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        RESERVATION_START_TIMESTAMP
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the start date of a reservation. All keys and values in the parameter map should be of type String.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "start_date"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="REVENUE_AMOUNT"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        REVENUE_AMOUNT
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the amount of revenue generated by a purchase event. All keys and values in the parameter map should be of type String.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "amount"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="REVENUE_CURRENCY"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        REVENUE_CURRENCY
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the currency of the revenue event. All keys and values in the parameter map should be of type String.
+
+ Ideally this should be an ISO 4217 3-letter currency code (for instance, USD, EUR, GBP...)
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "currency"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="SEARCH_QUERY"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        SEARCH_QUERY
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents a search query executed by the user. All keys and values in the parameter map should be of type String.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "query"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="USER_ACCOUNT_IDENTIFIER"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        USER_ACCOUNT_IDENTIFIER
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the username or account ID of the user. All keys and values in the parameter map should be of type String.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "username"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="VIRTUAL_CURRENCY_AMOUNT"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        VIRTUAL_CURRENCY_AMOUNT
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the amount of virtual currency that a user spent on an in-game purchase. All keys and values in the parameter map should be of type String.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "vcamount"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+<A NAME="VIRTUAL_CURRENCY_NAME"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        String
+      </span>
+        VIRTUAL_CURRENCY_NAME
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Parameter map key for <code><a href="../../../com/applovin/sdk/AppLovinEventService.html#trackEvent(java.lang.String, java.util.Map<java.lang.String, java.lang.String>)">trackEvent(String, Map)</a></code> which represents the name of the virtual currency that a user spent on an in-game purchase. All keys and values in the parameter map should be of type String.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                "vcname"
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="AppLovinEventParameters()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">AppLovinEventParameters</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize doclava-developer-docs.js */
+</script>
+
+</body>
+</html>

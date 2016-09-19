@@ -1,0 +1,3039 @@
+<api>
+<package name="com.applovin.adview"
+>
+<interface name="AdViewController"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="destroy"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSize"
+ return="com.applovin.sdk.AppLovinAdSize"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="initializeAdView"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="parentView" type="android.view.ViewGroup">
+</parameter>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="size" type="com.applovin.sdk.AppLovinAdSize">
+</parameter>
+<parameter name="sdk" type="com.applovin.sdk.AppLovinSdk">
+</parameter>
+<parameter name="viewAttributes" type="android.util.AttributeSet">
+</parameter>
+</method>
+<method name="isAdReadyToDisplay"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isAutoDestroy"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="loadNextAd"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="pause"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="renderAd"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+</method>
+<method name="renderAd"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+<parameter name="placement" type="java.lang.String">
+</parameter>
+</method>
+<method name="resume"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setAdClickListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdClickListener">
+</parameter>
+</method>
+<method name="setAdDisplayListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdDisplayListener">
+</parameter>
+</method>
+<method name="setAdLoadListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdLoadListener">
+</parameter>
+</method>
+<method name="setAdVideoPlaybackListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdVideoPlaybackListener">
+</parameter>
+</method>
+<method name="setAutoDestroy"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="isAutoDestory" type="boolean">
+</parameter>
+</method>
+</interface>
+<class name="AppLovinAdView"
+ extends="android.widget.RelativeLayout"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<constructor name="AppLovinAdView"
+ type="com.applovin.adview.AppLovinAdView"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="adSize" type="com.applovin.sdk.AppLovinAdSize">
+</parameter>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</constructor>
+<constructor name="AppLovinAdView"
+ type="com.applovin.adview.AppLovinAdView"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sdk" type="com.applovin.sdk.AppLovinSdk">
+</parameter>
+<parameter name="adSize" type="com.applovin.sdk.AppLovinAdSize">
+</parameter>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</constructor>
+<method name="destroy"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getAdViewController"
+ return="com.applovin.adview.AdViewController"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSize"
+ return="com.applovin.sdk.AppLovinAdSize"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="loadNextAd"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+</method>
+<method name="pause"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="renderAd"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+</method>
+<method name="renderAd"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+<parameter name="placement" type="java.lang.String">
+</parameter>
+</method>
+<method name="resume"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setAdClickListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdClickListener">
+</parameter>
+</method>
+<method name="setAdDisplayListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdDisplayListener">
+</parameter>
+</method>
+<method name="setAdLoadListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdLoadListener">
+</parameter>
+</method>
+<method name="setAdVideoPlaybackListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdVideoPlaybackListener">
+</parameter>
+</method>
+<method name="setAutoDestroy"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="isAutoDestory" type="boolean">
+</parameter>
+</method>
+<field name="NAMESPACE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;http://schemas.applovin.com/android/1.0&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="AppLovinIncentivizedInterstitial"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AppLovinIncentivizedInterstitial"
+ type="com.applovin.adview.AppLovinIncentivizedInterstitial"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor name="AppLovinIncentivizedInterstitial"
+ type="com.applovin.adview.AppLovinIncentivizedInterstitial"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sdk" type="com.applovin.sdk.AppLovinSdk">
+</parameter>
+</constructor>
+<method name="create"
+ return="com.applovin.adview.AppLovinIncentivizedInterstitial"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="create"
+ return="com.applovin.adview.AppLovinIncentivizedInterstitial"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sdk" type="com.applovin.sdk.AppLovinSdk">
+</parameter>
+</method>
+<method name="dismiss"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getUserIdentifier"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isAdReadyToDisplay"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="preload"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="adLoadListener" type="com.applovin.sdk.AppLovinAdLoadListener">
+</parameter>
+</method>
+<method name="setUserIdentifier"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="userIdentifier" type="java.lang.String">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="adRewardListener" type="com.applovin.sdk.AppLovinAdRewardListener">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="adRewardListener" type="com.applovin.sdk.AppLovinAdRewardListener">
+</parameter>
+<parameter name="videoPlaybackListener" type="com.applovin.sdk.AppLovinAdVideoPlaybackListener">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="adRewardListener" type="com.applovin.sdk.AppLovinAdRewardListener">
+</parameter>
+<parameter name="videoPlaybackListener" type="com.applovin.sdk.AppLovinAdVideoPlaybackListener">
+</parameter>
+<parameter name="adDisplayListener" type="com.applovin.sdk.AppLovinAdDisplayListener">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="adRewardListener" type="com.applovin.sdk.AppLovinAdRewardListener">
+</parameter>
+<parameter name="videoPlaybackListener" type="com.applovin.sdk.AppLovinAdVideoPlaybackListener">
+</parameter>
+<parameter name="adDisplayListener" type="com.applovin.sdk.AppLovinAdDisplayListener">
+</parameter>
+<parameter name="adClickListener" type="com.applovin.sdk.AppLovinAdClickListener">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="placement" type="java.lang.String">
+</parameter>
+<parameter name="adRewardListener" type="com.applovin.sdk.AppLovinAdRewardListener">
+</parameter>
+<parameter name="videoPlaybackListener" type="com.applovin.sdk.AppLovinAdVideoPlaybackListener">
+</parameter>
+<parameter name="adDisplayListener" type="com.applovin.sdk.AppLovinAdDisplayListener">
+</parameter>
+<parameter name="adClickListener" type="com.applovin.sdk.AppLovinAdClickListener">
+</parameter>
+</method>
+</class>
+<class name="AppLovinInterstitialAd"
+ extends="android.view.View"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="create"
+ return="com.applovin.adview.AppLovinInterstitialAdDialog"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sdk" type="com.applovin.sdk.AppLovinSdk">
+</parameter>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method name="isAdReadyToDisplay"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="placement" type="java.lang.String">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sdk" type="com.applovin.sdk.AppLovinSdk">
+</parameter>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="placement" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<interface name="AppLovinInterstitialAdDialog"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="dismiss"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isAdReadyToDisplay"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isShowing"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setAdClickListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdClickListener">
+</parameter>
+</method>
+<method name="setAdDisplayListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdDisplayListener">
+</parameter>
+</method>
+<method name="setAdLoadListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdLoadListener">
+</parameter>
+</method>
+<method name="setAdVideoPlaybackListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdVideoPlaybackListener">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="show"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="placement" type="java.lang.String">
+</parameter>
+</method>
+<method name="showAndRender"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+</method>
+<method name="showAndRender"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+<parameter name="placement" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<interface name="InterstitialAdDialogCreator"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="createInterstitialAdDialog"
+ return="com.applovin.adview.AppLovinInterstitialAdDialog"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sdk" type="com.applovin.sdk.AppLovinSdk">
+</parameter>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+</interface>
+</package>
+<package name="com.applovin.nativeAds"
+>
+<interface name="AppLovinNativeAd"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getAdId"
+ return="long"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCaptionText"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getClickUrl"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCtaText"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDescriptionText"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIconUrl"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getImageUrl"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getImpressionTrackingUrl"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getStarRating"
+ return="float"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTitle"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getVideoEndTrackingUrl"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="percentViewed" type="int">
+</parameter>
+<parameter name="firstPlay" type="boolean">
+</parameter>
+</method>
+<method name="getVideoStartTrackingUrl"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getVideoUrl"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isImagePrecached"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isVideoPrecached"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="launchClickTarget"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+</interface>
+<interface name="AppLovinNativeAdLoadListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onNativeAdsFailedToLoad"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="errorCode" type="int">
+</parameter>
+</method>
+<method name="onNativeAdsLoaded"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="nativeAds" type="java.util.List&lt;com.applovin.nativeAds.AppLovinNativeAd&gt;">
+</parameter>
+</method>
+</interface>
+<interface name="AppLovinNativeAdPrecacheListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onNativeAdImagePrecachingFailed"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.nativeAds.AppLovinNativeAd">
+</parameter>
+<parameter name="errorCode" type="int">
+</parameter>
+</method>
+<method name="onNativeAdImagesPrecached"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.nativeAds.AppLovinNativeAd">
+</parameter>
+</method>
+<method name="onNativeAdVideoPrecachingFailed"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.nativeAds.AppLovinNativeAd">
+</parameter>
+<parameter name="errorCode" type="int">
+</parameter>
+</method>
+<method name="onNativeAdVideoPreceached"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.nativeAds.AppLovinNativeAd">
+</parameter>
+</method>
+</interface>
+<interface name="AppLovinNativeAdService"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="loadNativeAds"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="numAdsToLoad" type="int">
+</parameter>
+<parameter name="listener" type="com.applovin.nativeAds.AppLovinNativeAdLoadListener">
+</parameter>
+</method>
+<method name="precacheResources"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.nativeAds.AppLovinNativeAd">
+</parameter>
+<parameter name="loadListener" type="com.applovin.nativeAds.AppLovinNativeAdPrecacheListener">
+</parameter>
+</method>
+</interface>
+</package>
+<package name="com.applovin.sdk"
+>
+<interface name="AppLovinAd"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getAdIdNumber"
+ return="long"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSize"
+ return="com.applovin.sdk.AppLovinAdSize"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getType"
+ return="com.applovin.sdk.AppLovinAdType"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isVideoAd"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<interface name="AppLovinAdClickListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="adClicked"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+</method>
+</interface>
+<interface name="AppLovinAdDisplayListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="adDisplayed"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+</method>
+<method name="adHidden"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+</method>
+</interface>
+<interface name="AppLovinAdLoadListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="adReceived"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+</method>
+<method name="failedToReceiveAd"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="errorCode" type="int">
+</parameter>
+</method>
+</interface>
+<interface name="AppLovinAdRewardListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="userDeclinedToViewAd"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+</method>
+<method name="userOverQuota"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+<parameter name="response" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method name="userRewardRejected"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+<parameter name="response" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method name="userRewardVerified"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+<parameter name="response" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method name="validationRequestFailed"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+<parameter name="errorCode" type="int">
+</parameter>
+</method>
+</interface>
+<interface name="AppLovinAdService"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="addAdUpdateListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="adListener" type="com.applovin.sdk.AppLovinAdUpdateListener">
+</parameter>
+<parameter name="adSize" type="com.applovin.sdk.AppLovinAdSize">
+</parameter>
+</method>
+<method name="addAdUpdateListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="adListener" type="com.applovin.sdk.AppLovinAdUpdateListener">
+</parameter>
+</method>
+<method name="hasPreloadedAd"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="adSize" type="com.applovin.sdk.AppLovinAdSize">
+</parameter>
+</method>
+<method name="loadNextAd"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="adSize" type="com.applovin.sdk.AppLovinAdSize">
+</parameter>
+<parameter name="callback" type="com.applovin.sdk.AppLovinAdLoadListener">
+</parameter>
+</method>
+<method name="preloadAd"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="adSize" type="com.applovin.sdk.AppLovinAdSize">
+</parameter>
+</method>
+<method name="removeAdUpdateListener"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="adListener" type="com.applovin.sdk.AppLovinAdUpdateListener">
+</parameter>
+<parameter name="adSize" type="com.applovin.sdk.AppLovinAdSize">
+</parameter>
+</method>
+</interface>
+<class name="AppLovinAdSize"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="allSizes"
+ return="java.util.Set&lt;com.applovin.sdk.AppLovinAdSize&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="fromString"
+ return="com.applovin.sdk.AppLovinAdSize"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sizeName" type="java.lang.String">
+</parameter>
+</method>
+<method name="getHeight"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLabel"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getWidth"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="BANNER"
+ type="com.applovin.sdk.AppLovinAdSize"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="deprecated"
+ visibility="public"
+>
+</field>
+<field name="INTERSTITIAL"
+ type="com.applovin.sdk.AppLovinAdSize"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="LEADER"
+ type="com.applovin.sdk.AppLovinAdSize"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="deprecated"
+ visibility="public"
+>
+</field>
+<field name="MREC"
+ type="com.applovin.sdk.AppLovinAdSize"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="deprecated"
+ visibility="public"
+>
+</field>
+<field name="SPAN"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="AppLovinAdType"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="allTypes"
+ return="java.util.Set&lt;com.applovin.sdk.AppLovinAdType&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLabel"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="INCENTIVIZED"
+ type="com.applovin.sdk.AppLovinAdType"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="REGULAR"
+ type="com.applovin.sdk.AppLovinAdType"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<interface name="AppLovinAdUpdateListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="adUpdated"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+</method>
+</interface>
+<interface name="AppLovinAdVideoPlaybackListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="videoPlaybackBegan"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+</method>
+<method name="videoPlaybackEnded"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="ad" type="com.applovin.sdk.AppLovinAd">
+</parameter>
+<parameter name="percentViewed" type="double">
+</parameter>
+<parameter name="fullyWatched" type="boolean">
+</parameter>
+</method>
+</interface>
+<class name="AppLovinErrorCodes"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AppLovinErrorCodes"
+ type="com.applovin.sdk.AppLovinErrorCodes"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<field name="FETCH_AD_TIMEOUT"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-102"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INCENTIVIZED_NO_AD_PRELOADED"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-300"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INCENTIVIZED_SERVER_TIMEOUT"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-500"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INCENTIVIZED_UNKNOWN_SERVER_ERROR"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-400"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INCENTIVIZED_USER_CLOSED_VIDEO"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-600"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INVALID_URL"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-900"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NO_FILL"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="204"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NO_NETWORK"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-103"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNABLE_TO_PRECACHE_IMAGE_RESOURCES"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-201"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNABLE_TO_PRECACHE_RESOURCES"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-200"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNABLE_TO_PRECACHE_VIDEO_RESOURCES"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-202"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNABLE_TO_PREPARE_NATIVE_AD"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-700"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNABLE_TO_RENDER_AD"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-6"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UNSPECIFIED_ERROR"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="-1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="AppLovinEventParameters"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AppLovinEventParameters"
+ type="com.applovin.sdk.AppLovinEventParameters"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<field name="CHECKOUT_TRANSACTION_IDENTIFIER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;transaction_id&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="COMPLETED_ACHIEVEMENT_IDENTIFIER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;achievement_id&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="COMPLETED_LEVEL_IDENTIFIER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;level_id&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CONTENT_IDENTIFIER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;content_id&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="IN_APP_DATA_SIGNATURE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;receipt_data_signature&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="IN_APP_PURCHASE_DATA"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;receipt_data&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="IN_APP_PURCHASE_TRANSACTION_IDENTIFIER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;store_id&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PRODUCT_IDENTIFIER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sku&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="RESERVATION_END_TIMESTAMP"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;end_date&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="RESERVATION_START_TIMESTAMP"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;start_date&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="REVENUE_AMOUNT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;amount&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="REVENUE_CURRENCY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;currency&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SEARCH_QUERY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;query&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_ACCOUNT_IDENTIFIER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;username&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="VIRTUAL_CURRENCY_AMOUNT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;vcamount&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="VIRTUAL_CURRENCY_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;vcname&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<interface name="AppLovinEventService"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="trackCheckout"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="transactionIdentifier" type="java.lang.String">
+</parameter>
+<parameter name="parameters" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method name="trackEvent"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="eventType" type="java.lang.String">
+</parameter>
+</method>
+<method name="trackEvent"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="eventType" type="java.lang.String">
+</parameter>
+<parameter name="parameters" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method name="trackInAppPurchase"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="purchaseIntent" type="android.content.Intent">
+</parameter>
+<parameter name="parameters" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+</interface>
+<class name="AppLovinEventTypes"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AppLovinEventTypes"
+ type="com.applovin.sdk.AppLovinEventTypes"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<field name="USER_ADDED_ITEM_TO_CART"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;cart&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_ADDED_ITEM_TO_WISHLIST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;wishlist&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_BEGAN_CHECKOUT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;checkout_start&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_COMPLETED_ACHIEVEMENT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;achievement&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_COMPLETED_CHECKOUT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;checkout&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_COMPLETED_IN_APP_PURCHASE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;iap&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_COMPLETED_LEVEL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;level&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_COMPLETED_TUTORIAL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;tutorial&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_CREATED_ACCOUNT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;registration&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_CREATED_RESERVATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;reservation&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_EXECUTED_SEARCH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;search&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_LOGGED_IN"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;login&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_PROVIDED_PAYMENT_INFORMATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;payment_info&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_SENT_INVITATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;invite&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_SHARED_LINK"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;share&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_SPENT_VIRTUAL_CURRENCY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;vcpurchase&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_VIEWED_CONTENT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;content&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="USER_VIEWED_PRODUCT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;product&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<interface name="AppLovinPostbackListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onPostbackFailure"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="url" type="java.lang.String">
+</parameter>
+<parameter name="errorCode" type="int">
+</parameter>
+</method>
+<method name="onPostbackSuccess"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="url" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<interface name="AppLovinPostbackService"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="dispatchPostbackAsync"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="targetUrl" type="java.lang.String">
+</parameter>
+<parameter name="postbackListener" type="com.applovin.sdk.AppLovinPostbackListener">
+</parameter>
+</method>
+</interface>
+<class name="AppLovinSdk"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AppLovinSdk"
+ type="com.applovin.sdk.AppLovinSdk"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getAdService"
+ return="com.applovin.sdk.AppLovinAdService"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEventService"
+ return="com.applovin.sdk.AppLovinEventService"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getInstance"
+ return="com.applovin.sdk.AppLovinSdk"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="getInstance"
+ return="com.applovin.sdk.AppLovinSdk"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="settings" type="com.applovin.sdk.AppLovinSdkSettings">
+</parameter>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="getInstance"
+ return="com.applovin.sdk.AppLovinSdk"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sdkKey" type="java.lang.String">
+</parameter>
+<parameter name="userSettings" type="com.applovin.sdk.AppLovinSdkSettings">
+</parameter>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="getNativeAdService"
+ return="com.applovin.nativeAds.AppLovinNativeAdService"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPostbackService"
+ return="com.applovin.sdk.AppLovinPostbackService"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSettings"
+ return="com.applovin.sdk.AppLovinSdkSettings"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTargetingData"
+ return="com.applovin.sdk.AppLovinTargetingData"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="hasCriticalErrors"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="initializeSdk"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="initializeSdk"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="isEnabled"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="CIS_BUILD_TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;{BUILD_NUMBER}&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="VERSION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;6.3.2&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="VERSION_CODE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="632"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="AppLovinSdkSettings"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AppLovinSdkSettings"
+ type="com.applovin.sdk.AppLovinSdkSettings"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getAutoPreloadSizes"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getAutoPreloadTypes"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getBannerAdRefreshSeconds"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isMuted"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isVerboseLoggingEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setAutoPreloadSizes"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sizeNames" type="java.lang.String">
+</parameter>
+</method>
+<method name="setAutoPreloadTypes"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="typeNames" type="java.lang.String">
+</parameter>
+</method>
+<method name="setBannerAdRefreshSeconds"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="adRefreshSeconds" type="long">
+</parameter>
+</method>
+<method name="setMuted"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="muted" type="boolean">
+</parameter>
+</method>
+<method name="setVerboseLogging"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="isVerboseLoggingEnabled" type="boolean">
+</parameter>
+</method>
+</class>
+<class name="AppLovinSdkUtils"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AppLovinSdkUtils"
+ type="com.applovin.sdk.AppLovinSdkUtils"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="dpToPx"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="px" type="int">
+</parameter>
+</method>
+<method name="openUri"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<parameter name="sdk" type="com.applovin.sdk.AppLovinSdk">
+</parameter>
+</method>
+<method name="openUrl"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="url" type="java.lang.String">
+</parameter>
+<parameter name="sdk" type="com.applovin.sdk.AppLovinSdk">
+</parameter>
+</method>
+<field name="TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;AppLovinSdkUtils&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<interface name="AppLovinTargetingData"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="clearData"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="putExtra"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method name="setBirthYear"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="birthYear" type="int">
+</parameter>
+</method>
+<method name="setCarrier"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="carrier" type="java.lang.String">
+</parameter>
+</method>
+<method name="setCountry"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="country" type="java.lang.String">
+</parameter>
+</method>
+<method name="setGender"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="gender" type="char">
+</parameter>
+</method>
+<method name="setInterests"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="interests" type="java.lang.String...">
+</parameter>
+</method>
+<method name="setKeywords"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="keywords" type="java.lang.String...">
+</parameter>
+</method>
+<method name="setLanguage"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="language" type="java.lang.String">
+</parameter>
+</method>
+<method name="setLocation"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="location" type="android.location.Location">
+</parameter>
+</method>
+<field name="GENDER_FEMALE"
+ type="char"
+ transient="false"
+ volatile="false"
+ value="102"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="GENDER_MALE"
+ type="char"
+ transient="false"
+ volatile="false"
+ value="109"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</interface>
+</package>
+</api>
